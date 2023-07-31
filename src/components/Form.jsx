@@ -86,7 +86,4 @@ const Form = () => {
     );
 };
 
-// const mapDispatchToProps = (dispatch) =>
-// bindActionCreators({ addStudent }, dispatch);
-
 export default Form;

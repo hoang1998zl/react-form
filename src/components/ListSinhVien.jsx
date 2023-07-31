@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteStudent, updateStudent } from '../actions';
+import { deleteStudent, updateStudents } from '../actions';
 
 const ListSinhVien = () => {
 
@@ -11,7 +11,7 @@ const ListSinhVien = () => {
         const storedStudents = localStorage.getItem('students');
         if (storedStudents) {
             const parsedStudents = JSON.parse(storedStudents);
-            dispatch(updateStudent(parsedStudents));
+            dispatch(updateStudents(parsedStudents));
         }
     }, [dispatch]);
 
